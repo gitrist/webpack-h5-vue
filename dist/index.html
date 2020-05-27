@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="viewport-fit=cover,width=device-width,initial-scale=1,user-scalable=no"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/><meta http-equiv="Pragma" content="no-cache"/><meta http-equiv="Expires" content="0"/><title>vue-h5</title><script>!function(win,doc){
+            win.onload = function(){
+                const PXSTANDARD = 375, REMUNIT = 100;
+                var ST = null, winWidth = 0;
+                win.addEventListener("resize",function(){
+                    clearTimeout(ST)
+                    ST = setTimeout(function(){
+                        setBodyFontSize();
+                    },60);
+                })
+                function setBodyFontSize(){
+                    winWidth = win.innerWidth;
+                    doc.documentElement.style.fontSize = winWidth/PXSTANDARD*REMUNIT + 'px';
+                }
+                setBodyFontSize();
+            }
+        }(window,document)</script></head><body><div id="root"></div><script src="js/main.b9b60.js"></script></body></html>
